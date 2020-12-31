@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HEAD -->
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="Katarina Casic">
+		<meta name = "viewport" content = "width=device-width">
+		<link type="text/css" rel="stylesheet" href = "../css/projects-style.css">
+
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+
+		<link rel="icon" type="image/png" href="../img/kc_icon.png"/>
+		<title>Katarina Ćasić | Weather Forecast</title>
+
+	</head>
+
+<!-- BODY -->
+<body>
+
+	<!-- navigation -->
+	<header>
+			<nav>
+				<ul>
+					<li><a href="../index.html">HOME</a></li>
+					<li><a href="aboutme.html">ABOUT ME</a></li>
+				</ul>
+			</nav>
+	</header>
+
+	<section class="container">
+		<div id="app_info">
+			<h1>Weather Forecast</h1>
+			<p>
+				Weather Forecast is an app with clean and simple UI, which shows current temperature anywhere in the world, 12 hours in ahead, and 7 days in advance.
+				It gives options of changing the unit (Celsius and Fahrenheit), as well as the language (Serbian and English).
+			</p>
+			<br>
+			<img src="../img/weatherforecast/weather_forecast.png" alt="Weather Forecast App">
+			<h3>My part:</h3>
+			<p>
+				The project was created by my friend who did the back-end part, and myself, who did the front-end of the app.<br>
+				My part included creating the visual concept of the app (according to the given data we extracted from the API),
+				placing the elements (where the settings page would be, how will the elements in the list be organized), and then
+				implementing all of that trough XML code.<br>
+				I’ve found suitable icons, chose appropriate colors and fonts for the app. I also created shapes used as containers
+				for certain elements that need to be grouped, and edited default transition between the activities in the app, to a slider transition.
+			</p>
+			<h3>XML</h3>
+			<p>
+				In order to remove unnecessary details on the screen, I’ve decided to use theme with noActionBar, so that the screen will have more
+				space to showcase the important information. At the early versions of the app, I’ve started with combinations of LinearLayout and
+				RelativeLayout, however, after many tests, I’ve noticed that Constraintlayout works much better with the application’s responsivity.
+				I’ve converted all the activities’ layouts to ConstraintLayout which served as the container for all the other elements, such as:
+				ListView, Button, ImageButton, ImageView, EditText and TextView, and Switch.
+			</p>
+			<img src="../img/weatherforecast/android_studio_sc.png" alt="Android Studio Screenshot"></img>
+			<p>
+				When downloading the app the first time, user sees settings page first where he needs to input the location. Every other time,
+				the user is greeted with the splash screen with the app name and the logo. The main screen, in the center, shows current temperature,
+				followed by the appropriate icon, percentage of clouds and humidity. Below it, there is a list showing the temperature in the next 12 hours.
+				In the center of the header, the date is set with the chosen location below it. On the top right on the header, settings icon is placed, and
+				top left calendar icon that opens a new activity, 7 Days which shows a list of temperature in the upcoming seven days.
+				Settings page lets the user change its location, unit or language.
+			</p>
+			<p><a href="https://github.com/marinakedzic/WeatherApp">github link</a></p>
+
+			<h3>Prototype</h3>
+			<div>
+				<video height="500px" loop muted autoplay>
+					<source src="../img/weatherforecast/wf_app.mp4" type="video/mp4">
+					Your browser does not support HTML video.
+				</video>
+			</div>
+		</div>
+
+		<hr>
+
+		<h2>Other projects</h2>
+	</section>
+
+	<section class="container">
+		<div id="my_work_shortcuts">
+		<div class="box">
+			<img src="../img/elysian/elysian.png"></img>
+			<div class="text_box">
+				<h3>elysian</h3>
+				<p>elysian is a social media app that also has a form of marketplace platform that is based on visual arts, such as digital and traditional arts, 3D art, photography and other.</p>
+				<div class="box_footer">
+					<img src="../img/icons/figma.png"></img>
+					<p>Figma</p>
+					<form action="elysian.html">
+						<button type="submit" class="button" value="elysian">See more</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<img src="../img/mrscore/mrscore.png"></img>
+			<div class="text_box">
+				<h3>MrScore</h3>
+				<p>MrScore is a desktop app that helps teachers track students’ progress.</p>
+				<div class="box_footer">
+					<img src="../img/icons/figma.png"></img>
+					<p>Figma</p>
+					<form action="mrscore.html">
+						<button type="submit" class="button" value="MrScore">See more</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<img src="../img/creative4world/creative4world.png"></img>
+			<div class="text_box">
+				<h3>Creative4Wrold</h3>
+				<p>Creative4World is an android app development company.</p>
+				<div class="box_footer">
+					<img src="../img/icons/adobe_xd.png"></img>
+					<p>Adobe XD</p>
+					<form action="creative4world.html">
+						<button type="submit" class="button" value="KomBank Redesign">See more</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- footer -->
+		<footer align = center>
+			<ul>
+				<li><a href="mailto:katarina.casic@gmail.com" target="_blank"><img src="../img/icons/gmail.png"></a></li>
+				<li><a href="https://www.facebook.com/katarinacasic27/" target="_blank"><img src="../img/icons/facebook.png"></a></li>
+				<li><a href="https://www.instagram.com/katarina.casic/" target="_blank"><img src="../img/icons/instagram.png"></a></li>
+				<li><a href="https://www.linkedin.com/in/katarina-casic" target="_blank"><img src="../img/icons/linkedin.png"></a></li>
+				<li><a href="https://github.com/katarinacasic" target="_blank"><img src="../img/icons/github.png"></a></li>
+			</ul>
+			<p>Copyright &copy; 2021 Katarina Ćasić. All rights reserved.</p>
+		</footer>
+	<body>
+</html>

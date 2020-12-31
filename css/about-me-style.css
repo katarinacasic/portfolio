@@ -1,0 +1,155 @@
+body{
+	font: 15px/1.5 'Poppins', Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f7f7f7;
+	color: #272727;
+}
+
+.container{
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+/* NAVIGATION */
+
+header{
+	min-height: 30px;
+	padding: 30px;
+	background: #272727;
+	color: #f7f7f7;
+}
+
+header a{
+	text-decoration: none;
+	color: #f7f7f7;
+}
+
+ul a:hover{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+header ul{
+	float: right;
+	margin: 0;
+	padding: 0 10%;
+}
+
+header li{
+	display: inline;
+	padding: 0 20px;
+}
+
+/* About Me Area */
+
+#about{
+	margin: 100px auto 50px auto;
+	width: 720px;
+	padding: 0;
+}
+
+#about img{
+	float: left;
+	height: 400px;
+	padding-right: 20px;
+}
+
+h2{
+	font: 32px 'Prata', Times, serif;
+	margin: 10px 0;
+}
+
+
+/* FOOTER */
+
+footer{
+	padding: 30px;
+	margin-top: 30px;
+	text-align: center;
+	color: #f7f7f7;
+	background-color: #272727;
+}
+
+footer ul{
+	padding: 0;
+	list-style: none;
+	margin: auto;
+}
+
+footer li{
+	display: inline;
+	text-decoration: none;
+}
+
+footer li img{
+	width: 32px;
+	padding: 0 10px;
+}
+
+footer p{
+	margin-bottom: 0;
+}
+
+
+/* RESPONSIVITY */
+
+@media(max-width:760px){
+	nav{
+		text-align: center;
+	}
+
+	header ul{
+		margin: auto;
+		padding: 0;
+		float: none;
+	}
+
+	#about {
+		width: 360px;
+		padding: 0;
+	}
+
+	#about img{
+		width: 360px;
+		height: auto;
+		margin-bottom: 20px;
+		padding: 0;
+	}
+}
+
+@media(max-width:360px){
+	header nav li{
+		text-align: center;
+		margin: 20px 0;
+		display: block;
+	}
+
+	header{
+		padding: 10px;
+	}
+
+	#about {
+		max-width: 100%;
+		margin: auto;
+		display: inline-grid;
+		padding: 0;
+	}
+
+	#about img{
+		max-width: 100%;
+		height: auto;
+		margin: 20px 0;
+		padding: 0;
+	}
+
+	#about #text{
+		margin: 10px;
+	}
+
+	footer img{
+		width: 24px;
+		padding: 10px;
+	}
+}

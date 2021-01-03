@@ -41,34 +41,65 @@ header li{
 	padding: 0 20px;
 }
 
-/* TITLE AREA */
+/* APP INFO */
 
 h1{
-	font: 58px 'Anton', Times, serif;
-	margin: 0;
-	padding-top: 100px;
-	letter-spacing: 1px;
+	font: 42px/1.4 'Cardo', Times, serif;
+	margin-top: 50px;
 }
 
-#title_area p{
-	font-size: 24px;
-	margin: 0;
-	padding-bottom: 100px;
+h3{
+	font: 24px/1.4 'Poppins' bold, Times, serif;
+	margin-top: 20px;
+	margin-bottom: 0;
 }
 
-/* MY WORK SHORTCUTS */
-
-#my_work_shortcuts{
+h2{
 	padding: 20px 0;
 }
 
-#my_work_shortcuts .box{
-	max-width: 40%;
-	margin: 15px;
-	display: inline-grid;
-	border: 0px solid;
+#app_info p{
+	width: 70%;
+}
+
+#app_info img{
+	width: 70%;
+}
+
+#app_info #wf_photos{
+	display: inline;
+}
+
+#wf_photos img{
+	width: 100px;
+}
+
+
+video{
+	border: 5px solid black;
 	border-radius: 10px;
-	box-shadow: 5px 5px 20px rgba(39, 39, 39, 0.5);
+	margin: 20px 0;
+}
+
+#desktop_vid{
+	max-width: 80%;
+}
+
+/* OTHER PROJECTS */
+
+#my_work_shortcuts{
+	display: inline-block;
+	width: 100%;
+	margin: 20px auto;
+}
+
+#my_work_shortcuts .box{
+	max-width: 30%;
+	margin: 10px;
+	border: 0px solid rgba(39, 39, 39, 0.0);
+	border-radius: 10px;
+	display: inline-grid;
+	box-shadow: 2px 2px 10px rgba(39, 39, 39, 0.5);
 }
 
 .box img{
@@ -78,13 +109,8 @@ h1{
 
 .text_box{
 	padding: 20px;
-	background-color: #f2f2f2;
+	background-color: #EEE;
 	border-radius: 0 0 10px 10px;
-}
-
-h3{
-	font: 24px/1.4;
-	margin-top: 10px;
 }
 
 .box_footer{
@@ -95,24 +121,25 @@ h3{
 
 .box_footer img{
 	height: 38px;
-	margin: auto;
 	float: left;
+	margin: auto;
 	border-radius: 0;
 }
 
 .box_footer p{
-	margin: auto;
+	float: left;
+	margin: auto 0;
 	padding: 10px 0;
 	padding-left: 10px;
-	float: left;
 }
 
 .box_footer button{
-	height: 38px;
-	padding-left: 20px;
-	padding-right: 20px;
-	text-align: center;
+	min-width: 100%;
+	padding: 0;
+	margin-top: 15px;
 	float: right;
+	height: 38px;
+	text-align: center;
 	background: #272727;
 	color: #f7f7f7;
 	border: none;
@@ -175,23 +202,21 @@ footer p{
 	}
 
 	#my_work_shortcuts .box{
-		max-width: 90%;
-		box-shadow: 2px 2px 10px rgba(39, 39, 39, 0.5);
+		max-width: 80%;
 	}
 
 	.box_footer{
 		margin: 0;
 	}
 
-	.box_footer p{
-		margin: auto 0;
+	#app_info p{
+		width: 100%;
 	}
 
-	.box_footer button{
-		min-width: 100%;
-		padding: 0;
-		margin-top: 15px;
+	#app_info img{
+		width: 100%;
 	}
+
 }
 
 @media(max-width:360px){
@@ -205,12 +230,20 @@ footer p{
 		padding: 10px;
 	}
 
+	#my_work_shortcuts .box{
+		max-width: 100%;
+	}
+
 	#my_work_shortcuts h3{
 		font-size: 18px;
 	}
 
 	#my_work_shortcuts p{
 		font-size: 12px;
+	}
+
+	video{
+		max-width: 100%;
 	}
 
 	footer img{

@@ -43,27 +43,31 @@ header li{
 
 /* APP INFO */
 
-h1{
-	font: 42px/1.4 'Cardo', Times, serif;
-	margin-top: 50px;
+h2{
+	font: 42px/1.4;
+	margin: 50px 0 0 0;
+	padding: 0;
 }
 
 h3{
-	font: 24px/1.4 'Poppins' bold, Times, serif;
-	margin-top: 20px;
-	margin-bottom: 0;
+	font: 24px/1.4;
+	margin: 50px 0 0 0;
 }
 
-h2{
-	padding: 20px 0;
+h4{
+	font: 24px/1.4;
+	font-weight: bold;
+	margin: 20px 0 0 0;
 }
 
 #app_info p{
 	width: 70%;
+	margin: 10px 0;
 }
 
 #app_info img{
 	width: 70%;
+	margin: 20px 0 0 0;
 }
 
 #app_info #wf_photos{
@@ -74,11 +78,10 @@ h2{
 	width: 100px;
 }
 
-
 video{
 	border: 5px solid black;
-	border-radius: 10px;
-	margin: 20px 0;
+	border-radius: 16px;
+	margin: 10px 0;
 }
 
 #desktop_vid{
@@ -86,6 +89,10 @@ video{
 }
 
 /* OTHER PROJECTS */
+
+hr{
+	margin-top: 30px;
+}
 
 #my_work_shortcuts{
 	display: inline-block;
@@ -95,7 +102,7 @@ video{
 
 #my_work_shortcuts .box{
 	max-width: 30%;
-	margin: 10px;
+	margin: 10px 10px 10px 0;
 	border: 0px solid rgba(39, 39, 39, 0.0);
 	border-radius: 10px;
 	display: inline-grid;

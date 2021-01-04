@@ -43,18 +43,18 @@ header li{
 
 /* APP INFO */
 
-h2{
+#app_info h2{
 	font: 42px/1.4;
 	margin: 50px 0 0 0;
 	padding: 0;
 }
 
-h3{
+#app_info h3{
 	font: 24px/1.4;
 	margin: 50px 0 0 0;
 }
 
-h4{
+#app_info h4{
 	font: 24px/1.4;
 	font-weight: bold;
 	margin: 20px 0 0 0;
@@ -120,8 +120,12 @@ hr{
 	border-radius: 0 0 10px 10px;
 }
 
+.text_box h3{
+	margin: 10px 0;
+}
+
 .box_footer{
-	margin-top: 30px;
+	margin-top: 20px;
 	height: auto;
 	width: 100%;
 }
